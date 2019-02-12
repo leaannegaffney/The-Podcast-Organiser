@@ -38,6 +38,6 @@ const concertos = {
   ],
 };
 
-const playlistCollection = [sonatas, concertos];
+const playlistCollection = require('./playlist-store.json').playlistCollection;
 
 module.exports = playlistCollection;
