@@ -1,49 +1,82 @@
 {
   "playlistCollection": [
     {
+      "id": "01",
       "title": "Beethoven Sonatas",
+      "duration": "",
       "songs": [
         {
+          "id": "01",
           "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         },
         {
+          "id": "02",
           "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         },
         {
+          "id": "03",
           "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         }
       ]
     },
     {
+      "id": "02",
       "title": "Beethoven Concertos",
+      "duration": "",
       "songs": [
         {
+          "id": "01",
           "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         },
         {
+          "id": "02",
           "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         },
         {
+          "id": "03",
           "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         }
       ]
     },
     
     {
+      "id": "03",
       "title": "Beethoven Symphony",
+      "duration": "",
       "songs":[
         {
+          "id": "01",
           "title": "Symphony No. 9",
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
+        },
+        {
+          "id": "02",
+          "title": "Symphony No. 12",
+          "artist": "Beethoven",
+          "duration": "",
+          "genre": ""
         }
-    
-    ]
-    
+      ]  
     }
   ]
 }
