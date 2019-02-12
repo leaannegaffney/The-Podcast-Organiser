@@ -3,56 +3,56 @@
     {
       "id": "01",
       "title": "Beethoven Sonatas",
-      "duration": "",
+      "duration": "Duration of playlist is 13 minutes",
       "songs": [
         {
           "id": "01",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven",
-          "duration": "",
+          "duration": "2 minutes",
           "genre": "classical"
         },
         {
           "id": "02",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "5 minutes",
+          "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "6 minutes",
+          "genre": "classical"
         }
       ]
     },
     {
       "id": "02",
       "title": "Beethoven Concertos",
-      "duration": "",
+      "duration": "Duration of playlist is 9 minutes",
       "songs": [
         {
           "id": "01",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "1 minute",
+          "genre": "classical"
         },
         {
           "id": "02",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "3 minutes",
+          "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "5 minutes",
+          "genre": "classical"
         }
       ]
     },
@@ -60,21 +60,21 @@
     {
       "id": "03",
       "title": "Beethoven Symphony",
-      "duration": "",
+      "duration": "Duration of playlist is 22 minutes",
       "songs":[
         {
           "id": "01",
           "title": "Symphony No. 9",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "15 minutes",
+          "genre": "classical"
         },
         {
           "id": "02",
           "title": "Symphony No. 12",
           "artist": "Beethoven",
-          "duration": "",
-          "genre": ""
+          "duration": "7 minutes",
+          "genre": "classical"
         }
       ]  
     }
