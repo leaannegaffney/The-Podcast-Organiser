@@ -39,12 +39,12 @@
         {
           "id": "02",
           "title": "Cromer High",
-          "duration": "54 minutes",
+          "duration": "54 minutes"
         },
         {
           "id": "03",
           "title": "Bruised",
-          "duration": "50 minutes",
+          "duration": "50 minutes"
         }
       ]
     },
@@ -54,22 +54,22 @@
       "title": "S-Town",
       "duration": "Duration of playlist is 22 minutes",
       "host": "Brian Reed",
-      "genre": "",
+      "genre": "Crime",
       "episodes":[
         {
           "id": "01",
-          "title": "Symphony No. 9",
-          "duration": "15 minutes",
+          "title": "Chapter I",
+          "duration": "15 minutes"
         },
         {
           "id": "02",
-          "title": "Symphony No. 12",
-          "duration": "7 minutes",
+          "title": "Chapter II",
+          "duration": "7 minutes"
         },
         {
           "id": "03",
-          "title": "Symphony No. 12",
-          "duration": "7 minutes",
+          "title": "Chapter III",
+          "duration": "7 minutes"
         }
       ]  
     }
