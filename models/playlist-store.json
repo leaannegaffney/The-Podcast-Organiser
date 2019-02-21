@@ -2,27 +2,27 @@
   "podcastCollection": [
     {
       "id": "01",
-      "title": "Beethoven Sonatas",
+      "title": "Food & Health",
       "duration": "Duration of playlist is 13 minutes",
-      "songs": [
+      "episodes": [
         {
           "id": "01",
           "title": "Piano Sonata No. 3",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "2 minutes",
           "genre": "classical"
         },
         {
           "id": "02",
           "title": "Piano Sonata No. 7",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "5 minutes",
           "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Sonata No. 10",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "6 minutes",
           "genre": "classical"
         }
@@ -30,27 +30,27 @@
     },
     {
       "id": "02",
-      "title": "Beethoven Concertos",
+      "title": "Crime",
       "duration": "Duration of playlist is 9 minutes",
-      "songs": [
+      "episodes": [
         {
           "id": "01",
           "title": "Piano Concerto No. 0",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "1 minute",
           "genre": "classical"
         },
         {
           "id": "02",
           "title": "Piano Concerto No. 4",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "3 minutes",
           "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Concerto No. 6",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "5 minutes",
           "genre": "classical"
         }
@@ -59,20 +59,20 @@
     
     {
       "id": "03",
-      "title": "Beethoven Symphony",
+      "title": "Comedy",
       "duration": "Duration of playlist is 22 minutes",
-      "songs":[
+      "episodes":[
         {
           "id": "01",
           "title": "Symphony No. 9",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "15 minutes",
           "genre": "classical"
         },
         {
           "id": "02",
           "title": "Symphony No. 12",
-          "artist": "Beethoven",
+          "host": "Beethoven",
           "duration": "7 minutes",
           "genre": "classical"
         }
