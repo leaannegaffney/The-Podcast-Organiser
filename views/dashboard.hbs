@@ -5,19 +5,20 @@
     <h1 class="ui header">
       {{title}}
     </h1>
-    <h3>
-      Host: {{host}}
-    </h2>
+    <section class="ui container">
+    <div class="ui grid">
+      <div class="twelve wide column"><h3>Host: {{host}}</h3></div>
+      <div class="four wide column"><h3>Genre: {{genre}}</h3></div>
+  </div>
+</section>   
     <p>
-      Total Duration: {{duration}}
+      <br>{{duration}}
     <p>
     <table class="ui table">
       <thead>
         <tr>
-          <th>Podcast</th>
-          <th>Host</th>
+          <th>Episode</th>
           <th>Duration</th>
-          <th>Genre</th>
         </tr>
       </thead>
       <tbody>
@@ -27,13 +28,7 @@
               {{title}}
             </td>
             <td>
-              {{host}}
-            </td>
-            <td>
               {{duration}}
-            </td>
-            <td>
-              {{genre}}
             </td>
           </tr>
         {{/each}}

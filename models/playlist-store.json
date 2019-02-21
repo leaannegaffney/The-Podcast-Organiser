@@ -4,25 +4,23 @@
       "id": "01",
       "title": "The Food Medic",
       "duration": "Duration of playlist is 13 minutes",
-      "host": "",
+      "host": "Dr Hazel Wallace",
+      "genre": "Diet & Health",
       "episodes": [
         {
           "id": "01",
           "title": "Piano Sonata No. 3",
-          "duration": "2 minutes",
-          "genre": "classical"
+          "duration": "2 minutes"
         },
         {
           "id": "02",
           "title": "Piano Sonata No. 7",
-          "duration": "5 minutes",
-          "genre": "classical"
+          "duration": "5 minutes"
         },
         {
           "id": "03",
           "title": "Piano Sonata No. 10",
-          "duration": "6 minutes",
-          "genre": "classical"
+          "duration": "6 minutes"
         }
       ]
     },
