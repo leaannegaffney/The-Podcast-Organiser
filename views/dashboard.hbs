@@ -2,8 +2,11 @@
 
 {{#each playlists}}
   <section class="ui segment">
-    <h2 class="ui header">
+    <h1 class="ui header">
       {{title}}
+    </h1>
+    <h3>
+      Host: {{host}}
     </h2>
     <p>
       Total Duration: {{duration}}
@@ -11,20 +14,20 @@
     <table class="ui table">
       <thead>
         <tr>
-          <th>Song</th>
-          <th>Artist</th>
+          <th>Podcast</th>
+          <th>Host</th>
           <th>Duration</th>
           <th>Genre</th>
         </tr>
       </thead>
       <tbody>
-        {{#each songs}}
+        {{#each episodes}}
           <tr>
             <td>
               {{title}}
             </td>
             <td>
-              {{artist}}
+              {{host}}
             </td>
             <td>
               {{duration}}

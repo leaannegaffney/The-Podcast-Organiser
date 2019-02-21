@@ -2,27 +2,25 @@
   "podcastCollection": [
     {
       "id": "01",
-      "title": "Food & Health",
+      "title": "The Food Medic",
       "duration": "Duration of playlist is 13 minutes",
+      "host": "",
       "episodes": [
         {
           "id": "01",
           "title": "Piano Sonata No. 3",
-          "host": "Beethoven",
           "duration": "2 minutes",
           "genre": "classical"
         },
         {
           "id": "02",
           "title": "Piano Sonata No. 7",
-          "host": "Beethoven",
           "duration": "5 minutes",
           "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Sonata No. 10",
-          "host": "Beethoven",
           "duration": "6 minutes",
           "genre": "classical"
         }
@@ -30,7 +28,7 @@
     },
     {
       "id": "02",
-      "title": "Crime",
+      "title": "The Teachers Pet",
       "duration": "Duration of playlist is 9 minutes",
       "episodes": [
         {
@@ -59,7 +57,7 @@
     
     {
       "id": "03",
-      "title": "Comedy",
+      "title": "S-Town",
       "duration": "Duration of playlist is 22 minutes",
       "episodes":[
         {
