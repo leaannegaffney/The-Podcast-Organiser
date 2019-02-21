@@ -52,24 +52,24 @@
     {
       "id": "03",
       "title": "S-Town",
-      "duration": "Duration of playlist is 22 minutes",
+      "duration": "Duration of playlist is 2 hours and 30 minutes",
       "host": "Brian Reed",
       "genre": "Crime",
       "episodes":[
         {
           "id": "01",
           "title": "Chapter I",
-          "duration": "15 minutes"
+          "duration": "50 minutes"
         },
         {
           "id": "02",
           "title": "Chapter II",
-          "duration": "7 minutes"
+          "duration": "45 minutes"
         },
         {
           "id": "03",
           "title": "Chapter III",
-          "duration": "7 minutes"
+          "duration": "55 minutes"
         }
       ]  
     }
