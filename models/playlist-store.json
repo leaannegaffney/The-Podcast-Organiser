@@ -27,25 +27,24 @@
     {
       "id": "02",
       "title": "The Teachers Pet",
-      "duration": "Duration of playlist is 9 minutes",
+      "duration": "Duration of playlist is 2 hours and 24 minutes",
       "host": "Hedley Thomas",
       "genre":"Crime",
       "episodes": [
         {
           "id": "01",
-          "title": "Piano Concerto No. 0",
-          "duration": "1 minute"
+          "title": "Bayview",
+          "duration": "40 minutes"
         },
         {
           "id": "02",
-          "title": "Piano Concerto No. 4",
-          "duration": "3 minutes",
+          "title": "Cromer High",
+          "duration": "54 minutes",
         },
         {
           "id": "03",
-          "title": "Piano Concerto No. 6",
-          "duration": "5 minutes",
-          "genre": "classical"
+          "title": "Bruised",
+          "duration": "50 minutes",
         }
       ]
     },
@@ -54,20 +53,23 @@
       "id": "03",
       "title": "S-Town",
       "duration": "Duration of playlist is 22 minutes",
+      "host": "Brian Reed",
+      "genre": "",
       "episodes":[
         {
           "id": "01",
           "title": "Symphony No. 9",
-          "host": "Beethoven",
           "duration": "15 minutes",
-          "genre": "classical"
         },
         {
           "id": "02",
           "title": "Symphony No. 12",
-          "host": "Beethoven",
           "duration": "7 minutes",
-          "genre": "classical"
+        },
+        {
+          "id": "03",
+          "title": "Symphony No. 12",
+          "duration": "7 minutes",
         }
       ]  
     }
