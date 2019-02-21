@@ -3,24 +3,24 @@
     {
       "id": "01",
       "title": "The Food Medic",
-      "duration": "Duration of playlist is 13 minutes",
+      "duration": "Duration of playlist is 1 hour 45 minutes",
       "host": "Dr Hazel Wallace",
       "genre": "Diet & Health",
       "episodes": [
         {
           "id": "01",
-          "title": "Piano Sonata No. 3",
-          "duration": "2 minutes"
+          "title": "Food for Fitness",
+          "duration": "40 minutes"
         },
         {
           "id": "02",
-          "title": "Piano Sonata No. 7",
-          "duration": "5 minutes"
+          "title": "Exercise is medicine: Mental Health and Physical Activity",
+          "duration": "30 minutes"
         },
         {
           "id": "03",
-          "title": "Piano Sonata No. 10",
-          "duration": "6 minutes"
+          "title": "Obesity and Genetics",
+          "duration": "35 minutes"
         }
       ]
     },
@@ -28,25 +28,22 @@
       "id": "02",
       "title": "The Teachers Pet",
       "duration": "Duration of playlist is 9 minutes",
+      "host": "Hedley Thomas",
+      "genre":"Crime",
       "episodes": [
         {
           "id": "01",
           "title": "Piano Concerto No. 0",
-          "host": "Beethoven",
-          "duration": "1 minute",
-          "genre": "classical"
+          "duration": "1 minute"
         },
         {
           "id": "02",
           "title": "Piano Concerto No. 4",
-          "host": "Beethoven",
           "duration": "3 minutes",
-          "genre": "classical"
         },
         {
           "id": "03",
           "title": "Piano Concerto No. 6",
-          "host": "Beethoven",
           "duration": "5 minutes",
           "genre": "classical"
         }
