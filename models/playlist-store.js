@@ -2,15 +2,15 @@
 
 const playlistStore = {
 
-  playlistCollection: require('./playlist-store.json').playlistCollection,
+  podcastCollection: require('./playlist-store.json').podcastCollection,
 
   getAllPlaylists() {
-    return this.playlistCollection;
+    return this.podcastCollection;
   },
 
   getPlaylist(id) {
     let foundPlaylist = null;
-    for (let playlist of this.playlistCollection) {
+    for (let playlist of this.podcastCollection) {
       if (id == playlist.id) {
         foundPlaylist = playlist;
       }
