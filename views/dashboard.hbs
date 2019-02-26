@@ -1,11 +1,38 @@
 {{> menu id="dashboard"}}
 
-{{#each podcast}}
+{{#each playlists}}
   <section class="ui segment">
-    <h2 class="ui header">
+    <h1 class="ui header">
       {{title}}
-    </h2>
-    <p> Total Duration: {{duration}} </p>
-    <a href="#"> View </a>
+    </h1>
+    <section class="ui container">
+    <div class="ui grid">
+      <div class="twelve wide column"><h3>Host: {{host}}</h3></div>
+      <div class="four wide column"><h3>Genre: {{genre}}</h3></div>
+  </div>
+</section>   
+    <p>
+      <br>{{duration}}
+    <p>
+    <table class="ui fixed table">
+      <thead>
+        <tr>
+          <th>Episode</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each episodes}}
+          <tr>
+            <td>
+              {{title}}
+            </td>
+            <td>
+              {{duration}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   </section>
 {{/each}}
