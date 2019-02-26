@@ -9,15 +9,9 @@ const playlistStore = {
   },
 
   getPlaylist(id) {
-    let foundPlaylist = null;
-    for (let playlist of this.podcastCollection) {
-      if (id == playlist.id) {
-        foundPlaylist = playlist;
-      }
-    }
-
-    return foundPlaylist;
+    return _.find(this.podcastCollection, { id: id });
   },
+  
    removeEpisode(id, episodeId) {
     const playlist = this.getPlaylist(id);
     _.remove(playlist.episodes, { id: episodeId });
