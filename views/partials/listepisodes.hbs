@@ -1,8 +1,9 @@
-  <table class="ui table">
+  <table class="ui fixed table">
   <thead>
     <tr>
       <th>Episode</th>
       <th>Duration</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -13,6 +14,9 @@
         </td>
         <td>
           {{duration}}
+        </td>
+        <td>
+          <a href="/playlist/{{../playlist.id}}/deleteepisode/{{id}}" class="ui tiny red button">Delete Episode</a>
         </td>
       </tr>
     {{/each}}

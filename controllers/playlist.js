@@ -13,6 +13,13 @@ const playlist = {
     };
     response.render('playlist', viewData);
   },
+    deleteEpisode(request, response) {
+    const playlistId = request.params.id;
+    const episodeId = request.params.episodeid;
+    logger.debug(`Deleting Episode ${episodeId} from Playlist ${playlistId}`);
+    playlistStore.removeEpisode(playlistId, episodeId);
+    response.redirect('/playlist/' + playlistId);
+  },
 };
 
 module.exports = playlist;

@@ -18,6 +18,9 @@ const playlistStore = {
 
     return foundPlaylist;
   },
+  removeEpisode(id, episodeId) {
+    const playlist = this.getPlaylist(id);
+  },
 };
 
 module.exports = playlistStore;
