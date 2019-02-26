@@ -1,7 +1,23 @@
 'use strict';
 
-const logger = require('../utils/logger');
+const playlistStore = {
 
-const podcastCollection = require('./playlist-store.json').podcastCollection;
+  playlistCollection: require('./playlist-store.json').playlistCollection,
 
-module.exports = podcastCollection;
+  getAllPlaylists() {
+    return this.playlistCollection;
+  },
+
+  getPlaylist(id) {
+    let foundPlaylist = null;
+    for (let playlist of this.playlistCollection) {
+      if (id == playlist.id) {
+        foundPlaylist = playlist;
+      }
+    }
+
+    return foundPlaylist;
+  },
+};
+
+module.exports = playlistStore;
