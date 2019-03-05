@@ -5,10 +5,25 @@
 
 .ui.menu
 {
-  background-color: #ffff99;
+  background-color: #ffffcc;
+}
+
+.ui.menu header a
+{
+  color: black;
+}
+
+.ui.menu header a:hover
+{
+  color: #196719;
+}
+
+.ui.menu .right-menu a:hover
+{
+  color: #196719;
 }
 
 #welcome
 {
-  background-color: #ffff99;
+  background-color: #ffffcc;
 }
