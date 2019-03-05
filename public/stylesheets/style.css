@@ -65,14 +65,9 @@
   color: #ffad33;
 }
 
-.ui.small.button
+.ui.fixed.table a:hover 
 {
-  background-color: #ffad33;
-}
-
-.ui.fixed.table a:hover
-{
-  background-color: white;
+  color: white;
 }
 
 .ui.fixed.table th
