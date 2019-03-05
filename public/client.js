@@ -3,5 +3,5 @@ $(".delplaylist").click(function(){
 });
 
 $(".delepisode").click(function(){
-  return confirm('Really delete this epsidode?');
+  return confirm('Really delete this episode?');
 });
