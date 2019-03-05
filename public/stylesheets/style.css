@@ -47,3 +47,26 @@
 {
   background-color: #e6e6e6;
 }
+
+#about
+{
+  background-color: #e6e6e6;
+}
+
+#about b
+{
+  font-weight: bold;
+  color: #ffad33;
+  font-size: x-large;
+}
+
+.folder.open.icon, .trash.icon
+{
+  color: #ffad33;
+}
+
+.ui.small.button
+{
+  background-color: #ffad33;
+}
+
