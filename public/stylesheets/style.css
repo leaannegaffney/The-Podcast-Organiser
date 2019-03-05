@@ -1,6 +1,14 @@
-body
+/*body
+{
+  background-color: #ffff99;
+}*/
+
+.ui.menu
 {
   background-color: #ffff99;
 }
 
-ui
+#welcome
+{
+  background-color: #ffff99;
+}
