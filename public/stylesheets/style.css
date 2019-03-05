@@ -5,7 +5,7 @@
 
 .ui.menu
 {
-  background-color: #ffffcc;
+  background-color: #e6e6e6;
 }
 
 .ui.menu header a
@@ -13,17 +13,37 @@
   color: black;
 }
 
-.ui.menu header a:hover
+.ui.menu .header.item a
 {
-  color: #196719;
+  color: #ffad33;
 }
 
-.ui.menu .right-menu a:hover
+.ui.menu .header.item a:hover
 {
-  color: #196719;
+  color: black;
+}
+
+.ui.menu .right.menu a
+{
+  font-weight: bold;
+}
+
+.ui.menu .right.menu a:hover
+{
+  color: #ffad33;
 }
 
 #welcome
 {
-  background-color: #ffffcc;
+  background-color: #e6e6e6;
+}
+
+#welcome h1
+{
+  color: #ffad33;
+}
+
+#playlist
+{
+  background-color: #e6e6e6;
 }
