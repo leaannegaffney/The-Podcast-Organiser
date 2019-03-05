@@ -70,3 +70,19 @@
   background-color: #ffad33;
 }
 
+.ui.fixed.table a:hover
+{
+  background-color: white;
+}
+
+.ui.fixed.table th
+{
+  background-color: #e6e6e6;
+}
+
+
+.ui.fixed.table tbody tr:hover
+{
+  background-color: #e6e6e6;
+}
+
