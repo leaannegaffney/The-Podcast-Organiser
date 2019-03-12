@@ -1,6 +1,10 @@
 'use strict';
 const _ = require('lodash');
+const JsonStore = require('./json-store');
 const playlistStore = {
+  
+  store: new JsonStore('./models/playlist-store.json', { podcastCollection: [] }),
+  collection: 'podcastCollection',
 
   podcastCollection: require('./playlist-store.json').podcastCollection,
 
@@ -24,7 +28,7 @@ const playlistStore = {
     playlist.episodes.push(episode);
   },
   addPlaylist(playlist) {
-  this.playlistCollection.push(playlist);
+  this.podcastCollection.push(playlist);
 },
 };
 

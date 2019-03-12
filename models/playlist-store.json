@@ -3,7 +3,6 @@
     {
       "id": "01",
       "title": "The Food Medic",
-      "duration": "Duration of playlist is 1 hour 45 minutes",
       "host": "Dr Hazel Wallace",
       "genre": "Diet & Health",
       "episodes": [
@@ -27,9 +26,8 @@
     {
       "id": "02",
       "title": "The Teachers Pet",
-      "duration": "Duration of playlist is 2 hours and 24 minutes",
       "host": "Hedley Thomas",
-      "genre":"Crime",
+      "genre": "Crime",
       "episodes": [
         {
           "id": "01",
@@ -48,14 +46,12 @@
         }
       ]
     },
-    
     {
       "id": "03",
       "title": "S-Town",
-      "duration": "Duration of playlist is 2 hours and 30 minutes",
       "host": "Brian Reed",
       "genre": "Crime",
-      "episodes":[
+      "episodes": [
         {
           "id": "01",
           "title": "Chapter I",
@@ -71,7 +67,8 @@
           "title": "Chapter III",
           "duration": "55 minutes"
         }
-      ]  
+      ]
     }
-  ]
+  ],
+  "playlistCollection": []
 }

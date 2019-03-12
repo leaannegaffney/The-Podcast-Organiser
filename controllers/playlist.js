@@ -42,9 +42,8 @@ const playlist = {
     const newPlayList = {
       id: uuid(),
       title: request.body.title,
-      duration: request.body.duration,
-      host:request.body
-      genre:
+      host: request.body.host,
+      genre: request.body.genre,
       episodes: [],
     };
     playlistStore.addPlaylist(newPlayList);
