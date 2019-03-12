@@ -75,4 +75,7 @@
   background-color: #e6e6e6;
 }
 
-
+.ui.stacked.segment.form .ui.submit.button
+{
+  background-color: #ffad33;
+}
