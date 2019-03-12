@@ -7,29 +7,39 @@ const playlistStore = {
   collection: 'podcastCollection',
 
   podcastCollection: require('./playlist-store.json').podcastCollection,
-
+  
   getAllPlaylists() {
-    return this.podcastCollection;
+    return this.store.findAll(this.collection);
   },
 
   getPlaylist(id) {
-    return _.find(this.podcastCollection, { id: id });
+    return this.store.findOneBy(this.collection, { id: id });
   },
-  
-   removeEpisode(id, episodeId) {
+
+  addPlaylist(playlist) {
+    this.store.add(this.collection, playlist);
+  },
+
+  removePlaylist(id) {
     const playlist = this.getPlaylist(id);
-    _.remove(playlist.episodes, { id: episodeId });
+    this.store.remove(this.collection, playlist);
   },
-    removePlaylist(id) {
-  _.remove(this.podcastCollection, { id: id });
-},
-    addEpisode(id, episode) {
+
+  removeAllPlaylists() {
+    this.store.removeAll(this.collection);
+  },
+
+  addEpisode(id, episode) {
     const playlist = this.getPlaylist(id);
     playlist.episodes.push(episode);
   },
-  addPlaylist(playlist) {
-  this.podcastCollection.push(playlist);
-},
+
+  removeEpisode(id, episodeId) {
+    const playlist = this.getPlaylist(id);
+    const episodes = playlist.episodes;
+    _.remove(playlist.episodes, { id: episodeId});
+  },
+
 };
 
 module.exports = playlistStore;
