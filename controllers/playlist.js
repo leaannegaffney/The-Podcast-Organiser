@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const playlistStore = require('../models/playlist-store');
+const uuid = require('uuid');
 
 const playlist = {
   index(request, response) {
@@ -30,11 +31,24 @@ const playlist = {
     const playlistId = request.params.id;
     const playlist = playlistStore.getPlaylist(playlistId);
     const newEpisode = {
-      epsiode: request.body.episode,
+      id: uuid(),
+      title: request.body.title,
       duration: request.body.duration,
     };
     playlistStore.addEpisode(playlistId, newEpisode);
     response.redirect('/playlist/' + playlistId);
+  },
+    addPlaylist(request, response) {
+    const newPlayList = {
+      id: uuid(),
+      title: request.body.title,
+      duration: request.body.duration,
+      host:request.body
+      genre:
+      episodes: [],
+    };
+    playlistStore.addPlaylist(newPlayList);
+    response.redirect('/dashboard');
   },
 };
 

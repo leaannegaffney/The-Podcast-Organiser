@@ -23,6 +23,9 @@ const playlistStore = {
     const playlist = this.getPlaylist(id);
     playlist.episodes.push(episode);
   },
+  addPlaylist(playlist) {
+  this.playlistCollection.push(playlist);
+},
 };
 
 module.exports = playlistStore;
