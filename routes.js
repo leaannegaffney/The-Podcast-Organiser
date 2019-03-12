@@ -14,4 +14,5 @@ router.get('/about', about.index);
 router.get('/playlist/:id', playlist.index);
 router.get('/playlist/:id/deleteEpisode/:episodeid', playlist.deleteEpisode);
 router.get('/deletePlayList/:id', playlist.deletePlayList);
+router.post('/playlist/:id/addepisode', playlist.addEpisode);
 module.exports = router;

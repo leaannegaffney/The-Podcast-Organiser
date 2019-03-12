@@ -26,6 +26,16 @@ const playlist = {
     playlistStore.removePlaylist(playlistId);
     response.redirect('/dashboard');
   },
+    addEpisode(request, response) {
+    const playlistId = request.params.id;
+    const playlist = playlistStore.getPlaylist(playlistId);
+    const newEpisode = {
+      epsiode: request.body.episode,
+      duration: request.body.duration,
+    };
+    playlistStore.addEpisode(playlistId, newEpisode);
+    response.redirect('/playlist/' + playlistId);
+  },
 };
 
 module.exports = playlist;

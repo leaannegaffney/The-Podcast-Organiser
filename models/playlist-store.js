@@ -19,6 +19,10 @@ const playlistStore = {
     removePlaylist(id) {
   _.remove(this.podcastCollection, { id: id });
 },
+    addEpisode(id, episode) {
+    const playlist = this.getPlaylist(id);
+    playlist.episodes.push(episode);
+  },
 };
 
 module.exports = playlistStore;
