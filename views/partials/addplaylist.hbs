@@ -1,15 +1,18 @@
 <form class="ui stacked segment form" action="/playlist/addplaylist" method="POST">
-  <div class="field">
+  <div class="three inline fields">
+    <div class = "eight wide field">
     <label>Title</label>
     <input placeholder="Title" type="text" name="title" autofocus required>
   </div>
-  <div class="field">
-    <label>Host</label>
-    <input placeholder="Host" type="text" name="host" autofocus required>
-  </div>
-  <div class="field">
+  <div class="eight wide field">
     <label>Genre</label>
     <input placeholder="Genre" type="text" name="genre" autofocus required>
   </div>
-  <button class="ui blue submit button">Add Playlist</button>
+  <div class="eight wide field">
+    <label>Host</label>
+    <input placeholder="Host" type="text" name="host" autofocus required>
+  </div>
+  </div>
+  
+  <button class="ui submit button">Add Playlist</button>
 </form>
