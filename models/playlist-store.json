@@ -15,34 +15,6 @@
           "id": "02",
           "title": "Exercise is medicine: Mental Health and Physical Activity",
           "duration": "30 minutes"
-        },
-        {
-          "id": "03",
-          "title": "Obesity and Genetics",
-          "duration": "35 minutes"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "The Teachers Pet",
-      "host": "Hedley Thomas",
-      "genre": "Crime",
-      "episodes": [
-        {
-          "id": "01",
-          "title": "Bayview",
-          "duration": "40 minutes"
-        },
-        {
-          "id": "02",
-          "title": "Cromer High",
-          "duration": "54 minutes"
-        },
-        {
-          "id": "03",
-          "title": "Bruised",
-          "duration": "50 minutes"
         }
       ]
     },
