@@ -39,6 +39,14 @@ const playlistStore = {
     const episodes = playlist.episodes;
     _.remove(playlist.episodes, { id: episodeId});
   },
+  
+    editEpisode(id, episodeId, episodeDetails) {
+    const playlist = this.getPlaylist(id);
+    const episodes = playlist.episodes;
+    const thepos = episodes.findIndex(field=> field.id === episodeId);
+    episodes[thepos].title=episodeDetails.epsiode;
+    episodes[thepos].artist=episodeDetails.duration;
+  },
 
 };
 

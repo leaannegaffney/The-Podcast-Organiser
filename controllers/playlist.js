@@ -49,6 +49,18 @@ const playlist = {
     playlistStore.addPlaylist(newPlayList);
     response.redirect('/dashboard');
   },
+  
+    updateEpisode(request, response) {
+    const playlistId = request.params.id;
+    const episodeId = request.params.episodeid;
+    logger.debug("updating episode " + episodeId);
+    const alterEpisode = {
+      episode: request.body.episode,
+      duration: request.body.duration,
+    };
+    playlistStore.editEpisode(playlistId, episodeId, alterEpisode);
+    response.redirect('/playlist/' + playlistId);
+  },
 };
 
 module.exports = playlist;

@@ -8,8 +8,8 @@
       "episodes": [
         {
           "id": "01",
-          "title": "Food for Fitness",
-          "duration": "40 minutes"
+          "duration": "40 minutes",
+          "artist": "40 minutes"
         },
         {
           "id": "02",
