@@ -45,7 +45,11 @@ const playlistStore = {
     const episodes = playlist.episodes;
     const thepos = episodes.findIndex(field=> field.id === episodeId);
     episodes[thepos].title=episodeDetails.title;
-    episodes[thepos].artist=episodeDetails.duration;
+    episodes[thepos].duration=episodeDetails.duration;
+  },
+  
+   getUserPlaylists(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
   },
 
 };

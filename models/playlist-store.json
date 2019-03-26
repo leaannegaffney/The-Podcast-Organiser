@@ -1,48 +1,6 @@
 {
-  "podcastCollection": [
-    {
-      "id": "01",
-      "title": "The Food Medic",
-      "host": "Dr Hazel Wallace",
-      "genre": "Diet & Health",
-      "episodes": [
-        {
-          "id": "01",
-          "duration": "40 minutes",
-          "artist": "40 minutes",
-          "title": "sfgdfgfdg"
-        },
-        {
-          "id": "02",
-          "title": "dgdfgfggand Physical Activity",
-          "duration": "30 minutes",
-          "artist": "30 minutes"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "S-Town",
-      "host": "Brian Reed",
-      "genre": "Crime",
-      "episodes": [
-        {
-          "id": "01",
-          "title": "Chapter I",
-          "duration": "50 minutes"
-        },
-        {
-          "id": "02",
-          "title": "Chapter II",
-          "duration": "45 minutes"
-        },
-        {
-          "id": "03",
-          "title": "Chapter III",
-          "duration": "55 minutes"
-        }
-      ]
-    }
-  ],
-  "playlistCollection": []
+  "podcastCollection": 
+  [
+    
+  ]
 }
