@@ -3,6 +3,7 @@
 const logger = require('../utils/logger');
 const playlistStore = require('../models/playlist-store');
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 const playlist = {
   index(request, response) {
@@ -39,13 +40,14 @@ const playlist = {
     response.redirect('/playlist/' + playlistId);
   },
     addPlaylist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newPlayList = {
       id: uuid(),
+      userid: loggedInUser.id,
       title: request.body.title,
-      host: request.body.host,
-      genre: request.body.genre,
-      episodes: [],
+      songs: [],
     };
+    logger.debug('Creating a new Playlist', newPlayList);
     playlistStore.addPlaylist(newPlayList);
     response.redirect('/dashboard');
   },
