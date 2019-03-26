@@ -8,13 +8,21 @@
   </thead>
   <tbody>
     {{#each playlist.episodes}}
-      <tr>
-        <td>
-          {{title}}
-        </td>
-        <td>
-          {{duration}}
-        </td>
+        <form class = "ui form" action="/playlist/{{../playlist.id}}/updateepisode/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input placeholder="Episode" type="text" size = "30" name="episode" autofocus required value = "{{episode}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input placeholder="Duration" type="text" size = "30" name="duration" required value = "{{duration}}">
+        </span>
+      </td>
+      <td>
+        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+      </td>
         <td>
           <a href="/playlist/{{../playlist.id}}/deleteepisode/{{id}}" class="delepisode" ><i class="large trash icon"></i></a>
         </td>
