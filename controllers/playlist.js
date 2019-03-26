@@ -54,7 +54,9 @@ const playlist = {
       id: uuid(),
       userid: loggedInUser.id,
       title: request.body.title,
-      songs: [],
+      host: request.body.host,
+      genre: request.body.genre,
+      episodes: [],
     };
     logger.debug('Creating a new Playlist', newPlayList);
     playlistStore.addPlaylist(newPlayList);
