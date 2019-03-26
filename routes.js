@@ -18,4 +18,11 @@ router.post('/playlist/:id/addepisode', playlist.addEpisode);
 router.post('/playlist/addplaylist', playlist.addPlaylist);
 router.post('/playlist/:id/updateepisode/:episodeid', playlist.updateEpisode);
 
+router.get('/', accounts.index);
+router.get('/login', accounts.login);
+router.get('/signup', accounts.signup);
+router.get('/logout', accounts.logout);
+router.post('/register', accounts.register);
+router.post('/authenticate', accounts.authenticate);
+
 module.exports = router;
