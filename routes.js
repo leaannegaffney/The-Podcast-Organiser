@@ -14,7 +14,7 @@ router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 
 router.get('/playlist/:id', playlist.index);
-router.get('/playlist/:id/deleteEpisode/:episodeid', playlist.deleteEpisode);
+router.get('/playlist/:id/deleteepisode/:episodeid', playlist.deleteEpisode);
 router.post('/playlist/:id/addepisode', playlist.addEpisode);
 router.post('/playlist/:id/updateepisode/:episodeid', playlist.updateEpisode);
 

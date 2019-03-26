@@ -80,9 +80,8 @@
   background-color: #ffad33;
 }
 
-.name{
-  padding-top:20px;
-  padding-right:5px;
-  line-height:20px;
-  font-weight:bold;
+.name
+{
+  font-weight: bold;
+  color: #ffad33;
 }

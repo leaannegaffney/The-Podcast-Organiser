@@ -7,14 +7,20 @@ const accounts = require ('./accounts.js');
 
 const playlist = {
   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);  
     const playlistId = request.params.id;
     logger.debug('Playlist id = ', playlistId);
+    if (loggedInUser) {
     const viewData = {
       title: 'Playlist',
       playlist: playlistStore.getPlaylist(playlistId),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     response.render('playlist', viewData);
+    }
+    else response.redirect('/');
   },
+  
     deleteEpisode(request, response) {
     const playlistId = request.params.id;
     const episodeId = request.params.episodeid;
@@ -22,12 +28,14 @@ const playlist = {
     playlistStore.removeEpisode(playlistId, episodeId);
     response.redirect('/playlist/' + playlistId);
   },
+  
   deletePlayList(request, response) {
     const playlistId = request.params.id;
     logger.debug(`Deleting Playlist ${playlistId}`);
     playlistStore.removePlaylist(playlistId);
     response.redirect('/dashboard');
   },
+  
     addEpisode(request, response) {
     const playlistId = request.params.id;
     const playlist = playlistStore.getPlaylist(playlistId);
@@ -39,6 +47,7 @@ const playlist = {
     playlistStore.addEpisode(playlistId, newEpisode);
     response.redirect('/playlist/' + playlistId);
   },
+  
     addPlaylist(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newPlayList = {
