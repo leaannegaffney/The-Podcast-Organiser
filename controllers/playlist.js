@@ -55,7 +55,7 @@ const playlist = {
     const episodeId = request.params.episodeid;
     logger.debug("updating episode " + episodeId);
     const alterEpisode = {
-      episode: request.body.episode,
+      title: request.body.title,
       duration: request.body.duration,
     };
     playlistStore.editEpisode(playlistId, episodeId, alterEpisode);

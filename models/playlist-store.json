@@ -9,12 +9,14 @@
         {
           "id": "01",
           "duration": "40 minutes",
-          "artist": "40 minutes"
+          "artist": "40 minutes",
+          "title": "sfgdfgfdg"
         },
         {
           "id": "02",
-          "title": "Exercise is medicine: Mental Health and Physical Activity",
-          "duration": "30 minutes"
+          "title": "dgdfgfggand Physical Activity",
+          "duration": "30 minutes",
+          "artist": "30 minutes"
         }
       ]
     },
