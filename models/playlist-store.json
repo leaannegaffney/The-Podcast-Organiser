@@ -12,6 +12,14 @@
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Homer's Playlist",
       "songs": []
+    },
+    {
+      "id": "50249760-c857-4f6a-9021-6b63d6707a59",
+      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
+      "title": "Hello",
+      "host": "Me",
+      "genre": "Music",
+      "episodes": []
     }
   ]
 }
