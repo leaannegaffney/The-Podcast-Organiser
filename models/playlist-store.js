@@ -29,17 +29,16 @@ const playlistStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  addPlaylist(playlist) {
-        //const podcastId = this.getPlaylist(id);
+  addPlaylist(playlist, response) {
     playlist.picture.mv('tempimage', err => {
       if (!err) {
         cloudinary.uploader.upload('tempimage', result => {
           console.log(result);
           playlist.picture = result.url;
+          response();
         });
       }
     });
-    //podcastId.push(playlist);
   },
 
 

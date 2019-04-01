@@ -60,8 +60,9 @@ const playlist = {
       episodes: [],
     };
     logger.debug('Creating a new Playlist', newPlayList);
-    playlistStore.addPlaylist(newPlayList);
+    playlistStore.addPlaylist(newPlayList, function () {
     response.redirect('/dashboard');
+      });
   },
   
     updateEpisode(request, response) {
