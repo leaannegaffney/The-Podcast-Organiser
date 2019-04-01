@@ -30,7 +30,7 @@ const playlistStore = {
   },
 
   addPlaylist(id, playlist, response) {
-        const podcastCollection = this.getPlaylist(id);
+        const podcastId = this.getPlaylist(id);
     playlist.picture.mv('tempimage', err => {
       if (!err) {
         cloudinary.uploader.upload('tempimage', result => {
@@ -40,7 +40,7 @@ const playlistStore = {
         });
       }
     });
-    podcastCollection.push(playlist);
+    podcastId.push(playlist);
   },
 
 

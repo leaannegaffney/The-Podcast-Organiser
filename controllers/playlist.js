@@ -62,7 +62,7 @@ const playlist = {
     };
     logger.debug('Creating a new Playlist', newPlayList);
     playlistStore.addPlaylist(playlistId, newPlayList, function (){
-    response.redirect('/dashboard');
+    response.redirect('/playlistId');
       });
   },
   
