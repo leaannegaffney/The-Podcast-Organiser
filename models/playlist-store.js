@@ -29,8 +29,8 @@ const playlistStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
-  addPlaylist(id, playlist, response) {
-        const podcastId = this.getPlaylist(id);
+  addPlaylist(playlist, response) {
+        //const podcastId = this.getPlaylist(id);
     playlist.picture.mv('tempimage', err => {
       if (!err) {
         cloudinary.uploader.upload('tempimage', result => {
@@ -40,7 +40,7 @@ const playlistStore = {
         });
       }
     });
-    podcastId.push(playlist);
+    //podcastId.push(playlist);
   },
 
 

@@ -61,7 +61,7 @@ const playlist = {
       episodes: [],
     };
     logger.debug('Creating a new Playlist', newPlayList);
-    playlistStore.addPlaylist(playlistId, newPlayList, function (){
+    playlistStore.addPlaylist(newPlayList, function (){
     response.redirect('/playlistId');
       });
   },
