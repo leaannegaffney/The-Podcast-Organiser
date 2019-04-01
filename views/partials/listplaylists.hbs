@@ -1,20 +1,5 @@
 
 
-<div class="ui centered cards">
-{{#each playlists}}
-<div class="ui card">
-  <div class="center aligned header">{{title}}</div>
-      <div class="ui centered image imgheight">
-        <img src="{{picture}}">
-      </div>
-  
-  <h3>Host: {{host}}</h3>
-  <h3>Genre: {{genre}}</h3> 
-      <a href="/playlist/{{id}}" class="ui icon button"> <i class="folder open icon"></i> </a>
-    <a href="/deletePlayList/{{id}}" class=" delplaylist ui icon button"><i class="trash icon"></i></a>
-{{/each}}
-  </div>
-</div>
 
 <div class="ui centered cards">
   {{#each playlists}}
@@ -30,8 +15,8 @@
             <i class="icon trash"></i>
         </div>
       </div>
-    </div>
   
   {{/each}}
 </div>
+
 
