@@ -31,7 +31,7 @@ const playlistStore = {
 
   addPlaylist(id, playlist, response) {
         const podcastCollection = this.getPlaylist(id);
-    //playlist.picture.mv('tempimage', err => {
+    playlist.picture.mv('tempimage', err => {
       if (!err) {
         cloudinary.uploader.upload('tempimage', result => {
           console.log(result);

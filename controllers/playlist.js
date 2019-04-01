@@ -50,6 +50,7 @@ const playlist = {
   
     addPlaylist(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
+    const playlistId = request.params.id;
     const newPlayList = {
       id: uuid(),
       userid: loggedInUser.id,
@@ -60,7 +61,7 @@ const playlist = {
       episodes: [],
     };
     logger.debug('Creating a new Playlist', newPlayList);
-    playlistStore.addPlaylist(newPlayList, function (){
+    playlistStore.addPlaylist(playlistId, newPlayList, function (){
     response.redirect('/dashboard');
       });
   },
