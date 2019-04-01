@@ -56,11 +56,13 @@ const playlist = {
       title: request.body.title,
       host: request.body.host,
       genre: request.body.genre,
+      picture: request.files.picture,
       episodes: [],
     };
     logger.debug('Creating a new Playlist', newPlayList);
-    playlistStore.addPlaylist(newPlayList);
+    playlistStore.addPlaylist(newPlayList, function (){
     response.redirect('/dashboard');
+      });
   },
   
     updateEpisode(request, response) {

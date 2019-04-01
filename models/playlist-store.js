@@ -3,6 +3,7 @@ const _ = require('lodash');
 const JsonStore = require('./json-store');
 const cloudinary = require('cloudinary');
 const logger = require('../utils/logger');
+const path = require('path');
 
 try {
   const env = require('../.data/.env.json');
@@ -29,8 +30,19 @@ const playlistStore = {
   },
 
   addPlaylist(id, playlist, response) {
-    this.store.add(this.collection, playlist);
+        const podcastCollection = this.getPlaylist(id);
+    //playlist.picture.mv('tempimage', err => {
+      if (!err) {
+        cloudinary.uploader.upload('tempimage', result => {
+          console.log(result);
+          playlist.picture = result.url;
+          response();
+        });
+      }
+    });
+    podcastCollection.push(playlist);
   },
+
 
   removePlaylist(id) {
     const playlist = this.getPlaylist(id);
