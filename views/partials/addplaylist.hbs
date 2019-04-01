@@ -1,7 +1,7 @@
 <section class="ui container">
   <div class="ui center aligned grid">
     <div class = "sixteen wide column">    
-      <form class="ui stacked segment form" action="/playlist/addplaylist" method="POST">
+      <form class="ui stacked segment form" action="/playlist/addplaylist" method="POST" enctype="multipart/form-data">
         <div class = "row">
     
   
@@ -18,6 +18,10 @@
     <label>Host</label>
     <input placeholder="Host" type="text" name="host" autofocus required>
   </div>
+     <div class="column field">
+      <label>Image</label>
+      <input type="file" name="picture">  </input>
+    </div>
   </div>  
     </div>
   <div class = "row">
@@ -27,3 +31,4 @@
       </div>
 </div>
 </section> 
+
