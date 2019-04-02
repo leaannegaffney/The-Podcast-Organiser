@@ -7,21 +7,6 @@
       "host": "ads",
       "genre": "dsaa",
       "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554201268/oqtnhan4xpc2tix70rj6.jpg",
-      "episodes": [
-        {
-          "id": "c4e66945-3ca6-493c-9052-57c11369aceb",
-          "title": "dfasda",
-          "duration": "24"
-        }
-      ]
-    },
-    {
-      "id": "e3dff754-b049-4ce7-be67-1322d74f01dd",
-      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
-      "title": "Food Medic",
-      "host": "Hazel Wallace",
-      "genre": "Food",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554202591/kz0vbqlq8znentbvt87n.jpg",
       "episodes": []
     }
   ],
