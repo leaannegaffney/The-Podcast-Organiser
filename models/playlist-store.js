@@ -39,6 +39,7 @@ const playlistStore = {
         });
       }
     });
+    this.store.add(this.collection, playlist);
   },
 
 
