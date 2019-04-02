@@ -1,27 +1,21 @@
 {
   "podcastCollection": [
     {
-      "id": "086380e4-3595-493e-9014-60a71ad969a9",
+      "id": "a84be40f-cd20-4375-9c3d-a43125ea7df9",
       "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
-      "title": "dads",
-      "host": "ads",
-      "genre": "dsaa",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554201268/oqtnhan4xpc2tix70rj6.jpg",
-      "episodes": [
-        {
-          "id": "c4e66945-3ca6-493c-9052-57c11369aceb",
-          "title": "dfasda",
-          "duration": "24"
-        }
-      ]
-    },
-    {
-      "id": "e3dff754-b049-4ce7-be67-1322d74f01dd",
-      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
-      "title": "Food Medic",
+      "title": "The Food Medic",
       "host": "Hazel Wallace",
       "genre": "Food",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554202591/kz0vbqlq8znentbvt87n.jpg",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205643/oqvuak9n41dxrhzuimdt.jpg",
+      "episodes": []
+    },
+    {
+      "id": "0c89d288-7c48-47cc-b136-e31b10f6e9bc",
+      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
+      "title": "The Teacher's Pet",
+      "host": "n/a",
+      "genre": "Crime",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205708/ymk6fwxrqzgnwlmxvzxd.jpg",
       "episodes": []
     }
   ],
