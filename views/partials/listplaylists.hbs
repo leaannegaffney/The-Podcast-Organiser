@@ -1,22 +1,28 @@
 
 
 
-<div class="ui centered cards">
   {{#each playlists}}
-  
+ <div class="ui centered cards"> 
     <div class="ui card">
-      <div class="ui centered image imgheight">
+      <div class="ui small centered image">
         <img src="{{picture}}" alt="{{title}}">
       </div>
       <div class="content">
         <p class="center aligned header">{{title}}</p>
+        <p class = "genre">
+          {{genre}}
+        </p>
+        <p class = "host">
+          {{host}}
+        </p>
         <p class="center aligned">
         </p>
             <i class="icon trash"></i>
         </div>
       </div>
+   </div>
   
   {{/each}}
-</div>
+
 
 
