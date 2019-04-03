@@ -1,36 +1,16 @@
 {
   "podcastCollection": [
     {
-      "id": "a84be40f-cd20-4375-9c3d-a43125ea7df9",
+      "id": "979fc2b4-9862-4bb8-9631-933c2471c097",
       "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
       "title": "The Food Medic",
       "host": "Hazel Wallace",
       "genre": "Food",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205643/oqvuak9n41dxrhzuimdt.jpg",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554287303/yvokj3h8sbe3sh0d2hjr.jpg",
       "episodes": [
         {
-          "id": "22d85c0a-f8b8-48db-aab9-402b5a099bd3",
+          "id": "ad8c7dc8-f389-4c9d-bc44-4f92e15dd541",
           "title": "1",
-          "duration": "12"
-        },
-        {
-          "id": "dfcd068b-1a93-4064-811d-f64b037d5b02",
-          "title": "2",
-          "duration": "14"
-        }
-      ]
-    },
-    {
-      "id": "0c89d288-7c48-47cc-b136-e31b10f6e9bc",
-      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
-      "title": "The Teacher's Pet",
-      "host": "n/a",
-      "genre": "Crime",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205708/ymk6fwxrqzgnwlmxvzxd.jpg",
-      "episodes": [
-        {
-          "id": "01bda5b6-becf-4c25-b07b-781de0a14a07",
-          "title": "3",
           "duration": "24"
         }
       ]

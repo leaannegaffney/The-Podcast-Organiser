@@ -36,16 +36,16 @@ index(request, response) {
     
     //smallest collection
     let currentcollectionlength = 0;
-    let smallestcollection = playlists[0].episodes.length;
+    let smallestpodcast = playlists[0].episodes.length;
     let smallest = playlists[0].title;
     for (let i in playlists) {
       currentcollectionlength = playlists[i].episodes.length;
-      if(currentcollectionlength <= smallestcollection){
+      if(currentcollectionlength <= smallestpodcast){
         smallest = playlists[i].title;
-        smallestcollection = playlists[i].episodes.length;
+        smallestpodcast = playlists[i].episodes.length;
       }
     }
-    logger.debug('smallest title: ', smallest, ', smallest size: ', smallestcollection);
+    logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
     
   
     if (loggedInUser) {
