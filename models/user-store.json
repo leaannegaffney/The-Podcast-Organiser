@@ -13,6 +13,13 @@
       "email": "homer@simpson.com",
       "password": "secret",
       "id": "a6c1050f-2a8e-45a4-b554-11f28a2d79b9"
+    },
+    {
+      "firstName": "",
+      "lastName": "jkj",
+      "email": "lkjlkj",
+      "password": "kljlkj",
+      "id": "ef1c7e53-1e8e-439c-8a12-1063e0f69a66"
     }
   ]
 }
