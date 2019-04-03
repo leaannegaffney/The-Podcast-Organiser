@@ -24,8 +24,8 @@ const accounts = {
     
     const viewData = {
       title: 'Login or Signup',
-      totalcollections: bookmarkCollections.length,
-      totalbookmarks: totalbookmarks,
+      totalcollections: playlists.length,
+      totalbookmarks: totalepisodes,
       totalusers: users.length,
       totalcomments: comments.length,
     };
