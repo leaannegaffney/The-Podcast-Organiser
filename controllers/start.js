@@ -11,8 +11,8 @@ index(request, response) {
     logger.info('start rendering');
   
   //total number of bookmark collections and bookmarks
-    const playlists = playlistStore.getUserPlaylists(loggedInUser.id);
-    let totalepisodes = 0;
+  const playlists = playlistStore.getUserPlaylists(loggedInUser.id);
+  let totalepisodes = 0;
   let avg = 0;
   let max = 0;
   let currentcollectionlength = 0;
@@ -32,8 +32,6 @@ index(request, response) {
     }
     
     //largest collection
-    
-    
     for (let i in playlists) {
       if(playlists[i].episodes.length > max){
         largest = playlists[i].title;
@@ -43,7 +41,6 @@ index(request, response) {
     logger.debug('largest: ', largest, ', max: ', max);
     
     //smallest collection
-    
     smallestpodcast = playlists[0].episodes.length;
     smallest = playlists[0].title;
     for (let i in playlists) {
