@@ -2,12 +2,32 @@
 const userstore = require('../models/user-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
+const playlistStore = require('../models/playlist-store');
+const commentStore = require('../models/comment-store');
 
 const accounts = {
 
   index(request, response) {
+    
+      //total number of bookmark collections and bookmarks
+    const playlists = playlistStore.getAllPlaylists();
+    let totalepisodes = 0;
+    for (let i in playlists) {
+     totalepisodes = totalepisodes + playlists[i].episodes.length;
+    }
+
+    //total number of users
+    const users = userstore.getAllUsers();
+    
+    //total number of comment
+    const comments = commentStore.getAllComments();
+    
     const viewData = {
       title: 'Login or Signup',
+      totalcollections: bookmarkCollections.length,
+      totalbookmarks: totalbookmarks,
+      totalusers: users.length,
+      totalcomments: comments.length,
     };
     response.render('index', viewData);
   },
