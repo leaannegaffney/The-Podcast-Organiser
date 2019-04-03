@@ -1,4 +1,23 @@
 {
-  "podcastCollection": [],
+  "podcastCollection": [
+  {
+      "id": "a84be40f-cd20-4375-9c3d-a43125ea7df9",
+      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
+      "title": "The Food Medic",
+      "host": "Hazel Wallace",
+      "genre": "Food",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205643/oqvuak9n41dxrhzuimdt.jpg",
+      "episodes": []
+    },
+    {
+      "id": "0c89d288-7c48-47cc-b136-e31b10f6e9bc",
+      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
+      "title": "The Teacher's Pet",
+      "host": "n/a",
+      "genre": "Crime",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554205708/ymk6fwxrqzgnwlmxvzxd.jpg",
+      "episodes": []
+    }
+  ],
   "episodes": []
 }
