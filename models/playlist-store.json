@@ -1,15 +1,4 @@
 {
-  "podcastCollection": [
-    {
-      "id": "979fc2b4-9862-4bb8-9631-933c2471c097",
-      "userid": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9",
-      "title": "The Food Medic",
-      "host": "Hazel Wallace",
-      "genre": "Food",
-      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554287303/yvokj3h8sbe3sh0d2hjr.jpg",
-      "episodes": [
-      ]
-    }
-  ],
+  "podcastCollection": [],
   "episodes": []
 }
