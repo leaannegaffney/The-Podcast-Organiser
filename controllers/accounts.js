@@ -60,9 +60,8 @@ const accounts = {
   },
 
   authenticate(request, response) {
-    const user = userstore.getUserByEmail(request.body.email);
-    const password = userstore.getUserByPassword(request.body.password);
-    if (user && password) {
+
+    if (const user === userstore.getUserByEmail(request.body.email) && const password === userstore.getUserByPassword(request.body.password)) {
       response.cookie('playlist', user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect('/start');
