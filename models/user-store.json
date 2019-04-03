@@ -4,7 +4,7 @@
       "firstName": "Marge",
       "lastName": "Simpson",
       "email": "marge@simpson.com",
-      "password": "marge",
+      "password": "secret",
       "id": "8aaa0ff4-fd84-4bb9-88ec-ceb52d3ad6d9"
     }
   ]

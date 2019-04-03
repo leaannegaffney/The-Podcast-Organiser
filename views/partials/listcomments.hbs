@@ -1,0 +1,25 @@
+{{#if comments}}
+
+<div class="ui comments">
+  <h3 class="ui dividing header">Feedback</h3>
+  
+  {{#each comments}}
+  <div class="comment">
+    <a class="avatar">
+      <i class="ui user icon large"></i>
+    </a>
+    <div class="content">
+      <a class="author">{{username}}</a>
+      <div class="metadata">
+        <span class="date">{{date}}</span>
+      </div>
+      <div class="text">
+        {{comment}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+</div>
+{{/if}}
+ 
