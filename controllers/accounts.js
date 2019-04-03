@@ -9,9 +9,11 @@ const accounts = {
 
   index(request, response) {
     
-      //total number of bookmark collections and bookmarks
+    //total number of podcasts
     const playlists = playlistStore.getAllPlaylists();
     let totalepisodes = 0;
+    
+    //total number of episodes
     for (let i in playlists) {
      totalepisodes = totalepisodes + playlists[i].episodes.length;
     }
@@ -21,6 +23,35 @@ const accounts = {
     
     //total number of comment
     const comments = commentStore.getAllComments();
+    
+    //average episodes per podcast per user
+    avg = totalepisodes/playlists.length;
+    if(avg % 1 != 0){
+      avg = parseFloat(avg).toFixed(2);
+    }
+    
+    //largest podcast
+    for (let i in playlists) {
+      if(playlists[i].episodes.length > max){
+        largest = playlists[i].title;
+        max = playlists[i].episodes.length;
+      }
+    }
+    logger.debug('largest: ', largest, ', max: ', max);
+    
+    //smallest podcast
+    smallestpodcast = playlists[0].episodes.length;
+    smallest = playlists[0].title;
+    for (let i in playlists) {
+      currentcollectionlength = playlists[i].episodes.length;
+      if(currentcollectionlength <= smallestpodcast){
+        smallest = playlists[i].title;
+        smallestpodcast = playlists[i].episodes.length;
+      }
+    
+    }
+    logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
+  }
     
     const viewData = {
       title: 'Login or Signup',
