@@ -8,11 +8,6 @@
       "genre": "Food",
       "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554287303/yvokj3h8sbe3sh0d2hjr.jpg",
       "episodes": [
-        {
-          "id": "ad8c7dc8-f389-4c9d-bc44-4f92e15dd541",
-          "title": "1",
-          "duration": "24"
-        }
       ]
     }
   ],
