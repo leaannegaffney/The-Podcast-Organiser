@@ -52,11 +52,11 @@ index(request, response) {
     const viewData = {
         title: 'Welcome to The Podcast Organiser',
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        totalcollections: playlists.length,
-        totalbookmarks: totalepisodes,
-        avgbookmarks: avg,
-        biggestcollection: largest,
-        smallestcollection: smallest,
+        playlists: playlists.length,
+        totalepisodes: totalepisodes,
+        avgepisodes: avg,
+        biggestpodcast: largest,
+        smallestpodcast: smallest,
     };
     response.render('start', viewData);
     }
