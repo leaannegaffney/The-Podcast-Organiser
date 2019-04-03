@@ -13,19 +13,27 @@ index(request, response) {
   //total number of bookmark collections and bookmarks
     const playlists = playlistStore.getUserPlaylists(loggedInUser.id);
     let totalepisodes = 0;
+  let avg = 0;
+  let max = 0;
+  let currentcollectionlength = 0;
+  let smallestpodcast = 0;
+  let smallest = "";
+  let largest = "";
+  
+  if(playlists.length > 0){
     for (let i in playlists) {
      totalepisodes = totalepisodes + playlists[i].episodes.length;
     }
     
     //average bookmarks per collection
-    let avg = totalepisodes/playlists.length;
+    avg = totalepisodes/playlists.length;
     if(avg % 1 != 0){
       avg = parseFloat(avg).toFixed(2);
     }
     
     //largest collection
-    let max = 0;
-    let largest = "";
+    
+    
     for (let i in playlists) {
       if(playlists[i].episodes.length > max){
         largest = playlists[i].title;
@@ -35,18 +43,19 @@ index(request, response) {
     logger.debug('largest: ', largest, ', max: ', max);
     
     //smallest collection
-    let currentcollectionlength = 0;
-    let smallestpodcast = playlists[0].episodes.length;
-    let smallest = playlists[0].title;
+    
+    smallestpodcast = playlists[0].episodes.length;
+    smallest = playlists[0].title;
     for (let i in playlists) {
       currentcollectionlength = playlists[i].episodes.length;
       if(currentcollectionlength <= smallestpodcast){
         smallest = playlists[i].title;
         smallestpodcast = playlists[i].episodes.length;
       }
+    
     }
     logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
-    
+  }
   
     if (loggedInUser) {
     const viewData = {
