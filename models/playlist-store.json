@@ -34,6 +34,31 @@
           "duration": "30"
         }
       ]
+    },
+    {
+      "id": "fc4e4cbd-3fea-43bc-a9d8-87dd7591fb7e",
+      "userid": "a6c1050f-2a8e-45a4-b554-11f28a2d79b9",
+      "title": "assfd",
+      "host": "sdfsdf",
+      "genre": "sfsdf",
+      "picture": "http://res.cloudinary.com/leaannegaffney/image/upload/v1554315666/l1klal6wc8aluepfak5s.jpg",
+      "episodes": [
+        {
+          "id": "b9f1bc87-54d0-446d-9e05-c7a08865c362",
+          "title": "1",
+          "duration": "45"
+        },
+        {
+          "id": "9993dc94-e35e-426b-b3c1-14a31f1b0003",
+          "title": "334",
+          "duration": "23"
+        },
+        {
+          "id": "7f3d4cce-65e8-4951-a40a-8142bba5e7f1",
+          "title": "dfdf",
+          "duration": "4343"
+        }
+      ]
     }
   ],
   "episodes": []
