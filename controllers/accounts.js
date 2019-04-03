@@ -38,7 +38,8 @@ const accounts = {
       }
     }
     logger.debug('largest: ', largest, ', max: ', max);
-    
+  
+  
     //smallest podcast
     smallestpodcast = playlists[0].episodes.length;
     smallest = playlists[0].title;
@@ -52,6 +53,7 @@ const accounts = {
     }
     logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
   }
+}
     
     const viewData = {
       title: 'Login or Signup',
@@ -59,9 +61,12 @@ const accounts = {
       totalepisodes: totalepisodes,
       totalusers: users.length,
       totalcomments: comments.length,
+      avgepisodes: avg,
+      biggestpodcast: largest,
+      smallestpodcast: smallest,
     };
     response.render('index', viewData);
-  },
+
 
   login(request, response) {
     const viewData = {
