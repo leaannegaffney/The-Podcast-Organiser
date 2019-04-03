@@ -42,9 +42,9 @@ const accounts = {
     logger.debug('largest: ', largest, ', max: ', max);
   
     //smallest podcast
-    let currentcollectionlength = 
-    smallestpodcast = playlists[0].episodes.length;
-    smallest = playlists[0].title;
+    let currentcollectionlength = 0;
+    let smallestpodcast = playlists[0].episodes.length;
+    let smallest = playlists[0].title;
     for (let i in playlists) {
       currentcollectionlength = playlists[i].episodes.length;
       if(currentcollectionlength <= smallestpodcast){
