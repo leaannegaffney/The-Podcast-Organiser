@@ -18,8 +18,12 @@ const accounts = {
     let smallestpodcast = 0;
     let smallest = "";
     let largest = "";
-    const users = "";
-    const comments = "";
+  
+    //total number of users
+    const users = userstore.getAllUsers();
+    
+    //total number of comment
+    const comments = commentStore.getAllComments();
   
   if(playlists.length > 0){
     
@@ -28,13 +32,7 @@ const accounts = {
     for (let i in playlists) {
     totalepisodes = totalepisodes + playlists[i].episodes.length;
     }
-
-    //total number of users
-    users = userstore.getAllUsers();
-    
-    //total number of comment
-    comments = commentStore.getAllComments();
-    
+      
     //average episodes per podcast per user
     avg = totalepisodes/playlists.length;
     if(avg % 1 != 0){
@@ -82,7 +80,7 @@ const accounts = {
 
   login(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'Login',
     };
     response.render('login', viewData);
   },
@@ -94,7 +92,7 @@ const accounts = {
 
   signup(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'Sign Up',
     };
     response.render('signup', viewData);
   },
