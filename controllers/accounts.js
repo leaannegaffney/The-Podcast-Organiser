@@ -12,6 +12,17 @@ const accounts = {
     //total number of podcasts
     const playlists = playlistStore.getAllPlaylists();
     let totalepisodes = 0;
+    let avg = 0;
+    let max = 0;
+    let currentcollectionlength = 0;
+    let smallestpodcast = 0;
+    let smallest = "";
+    let largest = "";
+    const users = "";
+    const comments = "";
+  
+  if(playlists.length > 0){
+    
     
     //total number of episodes
     for (let i in playlists) {
@@ -19,20 +30,20 @@ const accounts = {
     }
 
     //total number of users
-    const users = userstore.getAllUsers();
+    users = userstore.getAllUsers();
     
     //total number of comment
-    const comments = commentStore.getAllComments();
+    comments = commentStore.getAllComments();
     
     //average episodes per podcast per user
-    let avg = totalepisodes/playlists.length;
+    avg = totalepisodes/playlists.length;
     if(avg % 1 != 0){
       avg = parseFloat(avg).toFixed(2);
     }
     
     //largest podcast
-    let max = 0;
-    let largest = "";
+    max = 0;
+    largest = "";
     for (let i in playlists) {
       if(playlists[i].episodes.length > max){
       largest = playlists[i].title;
@@ -42,9 +53,9 @@ const accounts = {
     logger.debug('largest: ', largest, ', max: ', max);
   
     //smallest podcast
-    let currentcollectionlength = 0;
-    let smallestpodcast = playlists[0].episodes.length;
-    let smallest = playlists[0].title;
+    currentcollectionlength = 0;
+    smallestpodcast = playlists[0].episodes.length;
+    smallest = playlists[0].title;
     for (let i in playlists) {
       currentcollectionlength = playlists[i].episodes.length;
       if(currentcollectionlength <= smallestpodcast){
@@ -53,7 +64,8 @@ const accounts = {
       }
     
     }
-    logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
+  logger.debug('smallest title: ', smallest, ', smallest size: ', smallestpodcast);
+  }
     
     const viewData = {
       title: 'Login or Signup',
